@@ -15,6 +15,18 @@
 
 // === Classi ===
 
+// Squadra: trasforma l'oggetto "grezzo" dell'API nei nomi scelti da noi
+class Squadra {
+  constructor(dati) {
+    this.id = dati.idTeam;          // id della squadra (serve per eventsnext/eventslast)
+    this.nome = dati.strTeam;       // nome della squadra
+    this.logo = dati.strBadge;      // URL dell'immagine del logo
+    this.lega = dati.strLeague;     // campionato
+    this.paese = dati.strCountry;   // paese
+    this.sport = dati.strSport;     // sport (per il filtro nella versione avanzata)
+  }
+}
+
 
 
 // === API ===
