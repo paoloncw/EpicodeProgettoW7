@@ -28,3 +28,38 @@ body {
 
 
 /* Aggiungi qui le tue regole per: form, risultati, card squadra, eventi. */
+
+/* === Form di ricerca === */
+.site-header h1 {
+  margin: 0 0 16px;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+#search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: hsl(220, 70%, 50%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: hsl(220, 70%, 40%);
+}
