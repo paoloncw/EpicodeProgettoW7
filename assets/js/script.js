@@ -28,6 +28,18 @@ class Squadra {
 }
 
 
+// Evento: una partita (prossima o già giocata)
+class Evento {
+  constructor(dati) {
+    this.id = dati.idEvent;                       // id dell'evento
+    this.data = dati.dateEvent;                   // data, formato "2026-11-28"
+    this.casa = dati.strHomeTeam;                 // squadra di casa
+    this.trasferta = dati.strAwayTeam;            // squadra in trasferta
+    this.punteggioCasa = dati.intHomeScore;       // gol casa (null se non giocata)
+    this.punteggioTrasferta = dati.intAwayScore;  // gol trasferta (null se non giocata)
+  }
+}
+
 
 // === API ===
 
